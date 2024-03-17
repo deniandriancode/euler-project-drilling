@@ -1,0 +1,20 @@
+#include <iostream>
+
+const long int target { 600851475143 };
+
+void solution()
+{
+    long int t { static_cast<long int>(target / 4) };
+    for (long int i = 1; i <= t; ++i) {
+	if (target % i == 0) {
+	    std::cout << i << " ";
+	}
+    }
+    std::cout << "\n";
+}
+
+int main(int argc, char **argv)
+{
+    solution();
+    return 0;
+}
